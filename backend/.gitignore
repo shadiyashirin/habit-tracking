@@ -1,0 +1,15 @@
+# Environment
+.env
+*.pyc
+__pycache__/
+
+# Virtual environment
+env/
+
+# Database
+db.sqlite3
+*.log
+
+# OS
+.DS_Store
+Thumbs.db

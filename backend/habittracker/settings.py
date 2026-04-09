@@ -1,4 +1,4 @@
-from logging import config
+
 from pathlib import Path
 from datetime import timedelta
 from dotenv import load_dotenv
@@ -70,7 +70,7 @@ import dj_database_url
 
 DATABASES = {
     'default': dj_database_url.config(
-        default=config('DATABASE_URL'),
+        default=os.environ.get('DATABASE_URL'),
         conn_max_age=600,
     )
 }
@@ -120,7 +120,7 @@ SIMPLE_JWT = {
 
 # CORS — allow React dev server & mobile apps
 # In production, replace with specific origins
-CORS_ALLOW_ALL_ORIGINS = DEBUG  # Allows mobile (Expo) + web during dev
+CORS_ALLOW_ALL_ORIGINS = True  # Allows mobile (Expo) + web during dev
 CORS_ALLOWED_ORIGINS = [
     'http://localhost:5173',
     'http://localhost:5174',

@@ -11,13 +11,15 @@
     },
     "ios": {
       "supportsTablet": false,
-      "bundleIdentifier": "com.yourname.habitly"
+      "bundleIdentifier": "com.shadi.habitly"
     },
     "android": {
       "adaptiveIcon": {
+        "foregroundImage": "./assets/image.png",
         "backgroundColor": "#1D9E75"
       },
-      "package": "com.yourname.habitly"
+      "package": "com.shadi.habitly",
+      "versionCode": 1
     },
     "plugins": [
       "expo-router"

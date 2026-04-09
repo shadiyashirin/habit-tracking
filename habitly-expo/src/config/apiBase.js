@@ -1,5 +1,5 @@
-import { Platform } from 'react-native'
 import Constants from 'expo-constants'
+import { Platform } from 'react-native'
 
 function getExpoHost() {
   const candidates = [
@@ -34,4 +34,4 @@ function getDevApiBase() {
 export const API_BASE =
   typeof __DEV__ !== 'undefined' && __DEV__
     ? getDevApiBase()
-    : 'https://your-production-api.com/api'
+    : 'https://habitly-backend.onrender.com/api'

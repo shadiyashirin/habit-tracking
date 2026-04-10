@@ -27,6 +27,13 @@
     "scheme": "habitly",
     "experiments": {
       "typedRoutes": false
-    }
+    },
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "48af2aa4-e7bc-4d2b-8419-f1530ca3cb41"
+      }
+    },
+    "owner": "shadiya"
   }
 }
